@@ -15,7 +15,11 @@ değil de "salt okunur" olarak açıklanmalıdır?
 Cevap:Val değişkeni immutable değil readonly değişkendir çünkü immutable değişkenlerin içerisindeki değer hiçbir şekilde değiştirilemez .
 Ancak  val ile tanımlanan bir değişken getter fonksiyonu ile dışardan bir değere bağlı ise bu değer değiştikçe val değeri de değişir.
 
-"Tip Çıkarımı" (Type inference) kavramını açıklayın. Hangi durumlarda tip belirtmek kesin olarak gereklidir?
+Soru 4)"Tip Çıkarımı" (Type inference) kavramını açıklayın. Hangi durumlarda tip belirtmek kesin olarak gereklidir?
+Cevap: Eğer bir değişkenin tipini yazmadan atama yapıyorsak idenin yorumlayarak bu değişkenin tip çıkarımı yapmasına type
+inference denir. Eğer değişkenin değeri sonradan atanacaksa(lateinit) tip belirtmek durumundayız.
+
+
 Kotlin'de tüm değişkenlerin sınıf olarak bulunması, "ilkel tip" (primitive type) olmadıkları anlamına gelir mi? Arka planda neler oluyor?
 "Tip Güvenliği" (Type Safety) kavramını açıklayın.
 Bir değişkeni nullable yapmak için ne yapmalıyız?
