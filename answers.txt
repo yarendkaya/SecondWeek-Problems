@@ -10,7 +10,11 @@ Cevap:var ile oluşturduğum propertynin setter fonksiyonunu private yaparak dı
 val değişken gibi davranır fakat bu tanımlamada propertyi  oluşturduğum class içinde bu setter fonksiyonuna erişebilirim(acces modifiers)
 Bundan dolayı oluşturduğum class içinde değişiklik yapıp dışardan değişiklik yapılmasını istemediğim durumlarda kullanabilirim.
 
-"Değişmez" (Immutable) ve "Salt Okunur" (ReadOnly) kavramlarını açıklayın. val değişkenler neden aslında "değişmez" değil de "salt okunur" olarak açıklanmalıdır?
+Soru 3)"Değişmez" (Immutable) ve "Salt Okunur" (ReadOnly) kavramlarını açıklayın. val değişkenler neden aslında "değişmez"
+değil de "salt okunur" olarak açıklanmalıdır?
+Cevap:Val değişkeni immutable değil readonly değişkendir çünkü immutable değişkenlerin içerisindeki değer hiçbir şekilde değiştirilemez .
+Ancak  val ile tanımlanan bir değişken getter fonksiyonu ile dışardan bir değere bağlı ise bu değer değiştikçe val değeri de değişir.
+
 "Tip Çıkarımı" (Type inference) kavramını açıklayın. Hangi durumlarda tip belirtmek kesin olarak gereklidir?
 Kotlin'de tüm değişkenlerin sınıf olarak bulunması, "ilkel tip" (primitive type) olmadıkları anlamına gelir mi? Arka planda neler oluyor?
 "Tip Güvenliği" (Type Safety) kavramını açıklayın.
