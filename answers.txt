@@ -40,8 +40,10 @@ bunun hatalı olduğunu gösterir. Buna null safety denir.
 
 Soru 9)Bir değişkene null değer atanır ve tip belirtilmezse Kotlin bu değişkeni nasıl yorumlar?
 Cevap: Normalde kotlinde değişken tipini vermeden bir değer ataması yapıldığında değerin türüne göre kotlin type inference
-ile değere uygun değişkeni atar. ancak null ataması yapıldığında ide bunu yorumlayamaz ve nothing? adında bir değişken ismi verir.
+ile değere uygun değişkeni atar ancak null ataması yapıldığında ide bunu yorumlayamaz ve nothing? adında bir değişken ismi verir.
 
-İlkel bir değişkenin nullable olması ile null değer alamaması arasında bellek yönetimi açısından nasıl farklar vardır?
+Soru 10)İlkel bir değişkenin nullable olması ile null değer alamaması arasında bellek yönetimi açısından nasıl farklar vardır?
+Cevap: Null değer alabilen değişkenler stack alanında, nullable değer alanlar ise heap alanında tutulur.
+
 Nullable bir değişkenin bir değere sahip olması ile null olması arasında bellek yönetimi açısından nasıl bir fark vardır? Null değer almış bir değişken bellekte yer kaplamaz diyebilir miyiz?
 Nullable bir değişkenle çalışırken hangi operatörleri kullanırız? Bu operatörlerin kullanım farkları nelerdir? Hangisini ne zaman kullanmak daha anlamlıdır?
