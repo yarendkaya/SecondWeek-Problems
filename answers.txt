@@ -48,4 +48,7 @@ Cevap: Null değer alabilen değişkenler stack alanında, nullable değer alanl
 Soru 11)Nullable bir değişkenin bir değere sahip olması ile null olması arasında bellek yönetimi açısından nasıl bir fark vardır? Null değer almış bir değişken bellekte yer kaplamaz diyebilir miyiz?
 Cevap: Bellek yönetimi açısından bir fark yoktur.
 
-Nullable bir değişkenle çalışırken hangi operatörleri kullanırız? Bu operatörlerin kullanım farkları nelerdir? Hangisini ne zaman kullanmak daha anlamlıdır?
+Soru 12)Nullable bir değişkenle çalışırken hangi operatörleri kullanırız? Bu operatörlerin kullanım farkları nelerdir? Hangisini ne zaman kullanmak daha anlamlıdır?
+Cevap: "!!." operatörü kullanıldığında bu şu anlama gelir. Değerin kesinlikle null olmadığını garanti ederek işlem yaptırılır.
+Bu değişken null olduğunda uygulamanın çalışmasını istemiyorsak bu operatör tercih edilir. "?." operatörü kullanıldığında
+ise bu değişkenin null olabileceğini ve eğer null ise kodun çalışmamasını sağlar.
