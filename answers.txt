@@ -19,8 +19,11 @@ Soru 4)"Tip Çıkarımı" (Type inference) kavramını açıklayın. Hangi durum
 Cevap: Eğer bir değişkenin tipini yazmadan atama yapıyorsak idenin yorumlayarak bu değişkenin tip çıkarımı yapmasına type
 inference denir. Eğer değişkenin değeri sonradan atanacaksa(lateinit) tip belirtmek durumundayız.
 
-
-Kotlin'de tüm değişkenlerin sınıf olarak bulunması, "ilkel tip" (primitive type) olmadıkları anlamına gelir mi? Arka planda neler oluyor?
+Soru 5)Kotlin'de tüm değişkenlerin sınıf olarak bulunması, "ilkel tip" (primitive type) olmadıkları anlamına gelir mi?
+Arka planda neler oluyor?
+Cevap 5) Kotlin'de yazdığımız kodun bytcode'una ulaşarak incelersek aslında referans tipli
+gösterdiğimiz değişkenlerin primitive tipte olduğunu görürüz. Bu durum Kotlin'in arkaplanda yaptığı optimizasyon işlemi
+sonucu gelişir.
 "Tip Güvenliği" (Type Safety) kavramını açıklayın.
 Bir değişkeni nullable yapmak için ne yapmalıyız?
 "Null Güvenliği" (Null Safety) kavramını açıklayın.
